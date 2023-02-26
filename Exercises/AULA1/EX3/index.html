@@ -1,0 +1,72 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+    </head>
+    <body>
+        <header>
+            <h1>Forms</h1>
+        </header>
+
+        <main>
+            <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <br>
+
+                Whats your age?<br>
+                <label for="name">Age:</label>
+                <input type="radio" name="age" value=&lt;18 checked="checked">&lt;18
+                <input type="radio" name="age" value="19-35">19-35
+                <input type="radio" name="age" value="36-48" checked="checked">36-48
+                <input type="radio" name="age" value="&gt;49">&gt;49
+                <br>
+                
+                <br>
+                <label for="name">Profession:</label>
+                <input type="text" name="profession" list="professions">
+                <datalist id="professions">
+                    <option>Professor</option>
+                    <option>Futebolista</option>
+                    <option>Apresentador</option>
+                    <option>Outros</option>
+                </datalist>
+                <br>
+
+                <br>
+                <label for="countries">Country</label>
+                <select name="countries" id="countries" required>
+                    <option value="">Select Please</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="portugal">United States</option>
+                    <option value="portugal">Spain</option>
+                    <option value="portugal">England</option>
+                    <option value="portugal">Brasil</option>
+                </select>
+                <br>
+
+                <br>
+                <label>Interests</label> <br>
+                <input type="checkbox" name="interests" id="bike" value="bike">Ride a Bike <br>
+                <input type="checkbox" name="interests" id="computer" value="play computer">Play Computer <br>
+                <input type="checkbox" name="interests" id="study" value="study">Study <br>
+                <input type="checkbox" name="interests" id="read" value="read">Read <br>
+                <input type="checkbox" name="interests" id="work" value="work">Work <br>
+                <input type="checkbox" name="interests" id="Sports" value="Sports">Sports <br>
+                <br>
+
+                <label for="Finding_Website">How did you find our website?</label> <br>
+                <textarea name="Finding Website" id="Finding_Website" cols="30" rows="10"></textarea>
+                <br>
+
+                <br>
+                <label for="submit">Finish</label>
+                <button type="submit" id="submit">submit</button>
+
+            </form>
+        </main>
+    </body>
+    </html>

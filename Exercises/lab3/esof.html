@@ -1,0 +1,98 @@
+--------------------------------------------------------------
+Feature: User Registration
+  As an unauthenticated user,
+  I want to be able to register myself in the application
+  So that I can have an account.
+
+  Scenario: Successful user registration
+    Given I am on the registration page
+    When I fill in the registration form with valid information
+    And I click the submit button
+    Then I should see a success message
+
+  Scenario: Failed user registration
+    Given I am on the registration page
+    When I fill in the registration form with invalid information
+    And I click the submit button
+    Then I should see an error message
+
+-----------------------------------------------------------------
+
+Feature: User Login
+  As a user,
+  I want to be able to login
+  So that I can access my account.
+
+  Scenario: Successful user login
+    Given I am on the login page
+    When I fill in the login form with valid credentials
+    And I click the login button
+    Then I should be redirected to the home page
+
+  Scenario: Failed user login - Invalid credentials
+    Given I am on the login page
+    When I fill in the login form with invalid credentials
+    And I click the login button
+    Then I should see an error message
+
+  Scenario: Failed user login - Account not registed
+    Given I am on the login page
+    When I fill in the login form with valid credentials
+    And my account is not registed
+    And I click the login button
+    Then I should see an error message
+---------------------------------------------------------------------
+
+Feature: User Logout
+  As a user,
+  I want to be able to logout
+  So that I can leave my account.
+
+  Scenario: Successful User logout
+    Given I am logged in to my account
+    When I click the logout button
+    Then I should be redirected to the login page
+    And I should see a success message
+-----------------------------------------------------------------
+
+Feature: Display Points of Interest Visited
+As a user
+I want to know how many points of interest I've seen so far
+So that I know my progress in discovering Porto
+
+Scenario: View activity tab
+Given the user is logged in
+When the user navigates to the "activity" tab in their profile
+Then the activity tab should display the number of points of interest the user has visited
+
+Scenario: Count points of interest visited
+Given the user is logged in and on the "activity" tab
+When the user views the number of points of interest they have visited
+Then the number displayed should be accurate and reflect the total number of points of interest visited
+
+Scenario: Display no points of interest visited
+Given the user is logged in and on the "activity" tab
+When the user has not visited any points of interest
+Then the number displayed should be "0".
+
+--------------------------------------------------------------------------
+
+Feature: Mark Points of Interest as Visited
+As a user
+I want to be able to mark a certain point of interest as visited
+So that I know which attractions I've visited
+
+Scenario: Mark point of interest as visited
+Given the user is logged in and viewing a point of interest
+When the user clicks the "visited" button
+Then the point of interest should be marked as visited
+
+Scenario: Mark point of interest as unvisited
+Given the user is logged in and viewing a point of interest that has already been marked as visited
+When the user clicks the "visited" button again
+Then the point of interest should be marked as unvisited (Não sei se querem colocar esta opção)
+
+---------------------------------------------------------------------------
+
+
+

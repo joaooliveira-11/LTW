@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700%7CPoppins:400,700%27');
+
+html{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', serif;
+    width: 840px;
+    margin: auto;
+    padding: 0.5em;
+}
+
+header {
+    background-color: #046DD5;
+    padding: 0.8em;
+    padding-left: 1em;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    margin: 0;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+h2{
+    margin: 0;
+    font-weight: 400;
+}
+
+nav > input{
+    opacity: 0;
+    position: absolute;
+}
+
+#signup a{
+    color: white;
+    text-decoration: none;
+    margin: 1em;
+}
+
+#menu ul {
+    text-align: center;
+    margin:0;
+    padding: 0;
+}
+
+#menu li {
+    list-style: none;
+    padding: 1em 0;
+}
+
+#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: red;
+}
+
+#menu li:nth-child(1){
+    border-top:0.2em solid #E1493E;
+}
+
+#menu li:nth-child(2){
+    border-top:0.2em solid #8ABA56;
+}
+#menu li:nth-child(3){
+    border-top:0.2em solid #5B4282;
+}
+#menu li:nth-child(4){
+    border-top:0.2em solid #FF8932;
+}
+#menu li:nth-child(5){
+    border-top:0.2em solid #19B6E9;
+}
+#menu li:nth-child(6){
+    border-top:0.2em solid #E84C8B;
+}
+
+
+#related{
+    background-color: #2A2F33;
+    padding: 1em;
+}
+
+article > h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+article > p{
+    font-family: 'Lora', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6em;
+}
+
+article > header{
+    background-color: tr;
+}
+
+article > header{
+    background-color: transparent;
+    position: relative;
+    margin: 1em;
+    padding: 0;
+    color: black;
+}
+
+#news img{
+    width: 100%;
+}
+
+#related p{
+    color: white;
+    font-weight: 0.5;
+}
+
+article > header > h1 {
+    font-size: 1.7rem;
+    position: absolute;
+    width: 9em;
+    margin: 0.5em;
+    text-shadow: 4px 6px 4px black;
+}
+
+#news p{
+    color: black;
+    margin: 1em;
+    font-weight: 400;
+}
+
+#news p:first-of-type::first-letter{
+    font-size: 1.5rem;
+}
+
+#news footer{
+    background-color: #F4655F;
+    padding: 1em;
+    color: white;
+    word-spacing: 1em;
+}
+
+#news footer .date{
+    margin: 1.2em;
+}
+
+#news footer > span > a{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #2A2F33;
+    color: white;
+    margin: 0;
+    margin-top: 1em;
+}
+
+footer > p {
+    margin: 0;
+    padding: 0.5rem;
+}
